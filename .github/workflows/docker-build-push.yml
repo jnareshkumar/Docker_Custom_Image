@@ -32,4 +32,3 @@ jobs:
         run: |
           docker push $REGISTRY/$IMAGE_NAME:${{ github.run_number }}
           docker push $REGISTRY/$IMAGE_NAME:latest
-```
