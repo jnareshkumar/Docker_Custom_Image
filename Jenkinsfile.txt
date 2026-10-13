@@ -17,7 +17,6 @@ node {
             sh 'echo "Test Passed"'
         }
     }
-
     stage('Push Image') {
         // Logs into Docker Hub and pushes image with two tags
         docker.withRegistry('https://index.docker.io/v1/', 'Docker_Hub_Credentials') {
